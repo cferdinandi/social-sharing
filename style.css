@@ -1,0 +1,127 @@
+/*
+
+    NAME.CSS v1.0
+    Description
+    http://gomakethings.com
+
+
+    Licensed under WTFPL.
+    http://www.wtfpl.net/
+    
+
+*/
+
+/*  RESPONSIVE RESET */
+/*  Replace with your own */
+
+@-webkit-viewport { width: device-width; zoom: 1.0; }
+   @-moz-viewport { width: device-width; zoom: 1.0; }
+    @-ms-viewport { width: device-width; zoom: 1.0; }
+     @-o-viewport { width: device-width; zoom: 1.0; }
+        @viewport { width: device-width; zoom: 1.0; }
+
+html { overflow-y: auto; }
+
+img, audio, video, canvas { max-width: 100%; }
+
+/*  Sets Body Width */
+.container { 
+    max-width: 40em;
+    width: 88%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+
+
+
+
+/*  BASE BUTTONS STYLES */
+/*  These are included already with Kraken.
+ *  Only needed if you're using another framework. */
+
+.btn {
+    display: inline-block;
+    font-size: .882352941em;
+    padding: .4em .666666667em;
+    line-height: 1.333333333;
+    font-weight: normal;
+    background-color: #808080;
+    border: .071428571em solid #808080;
+    border-radius: .235294118em;
+    margin-left: .3em;
+    margin-bottom: .3em;
+}
+
+.btn, 
+.btn:hover, 
+a .btn:hover {
+    color: #ffffff;
+}
+
+.btn:hover, 
+a .btn:hover,
+.btn.active {
+    background-color: #595959;
+    border-color: #595959;
+    text-decoration: none;
+}
+
+
+
+
+
+/*  SOCIAL SHARING BUTTONS */
+/*  Styling for social sharing buttons */
+
+/*  Twitter button color */
+.btn-tweet {
+    background-color: #41b7d8;
+    border-color: #41b7d8; 
+}
+
+/*  Twitter button color on hover */
+.btn-tweet:hover, 
+a .btn-tweet:hover {
+    background-color: #3697b2;
+    border-color: #3697b2; 
+}
+
+/*  Facebook button color */
+.btn-facebook {
+    background-color: #3b5997;
+    border-color: #3b5997; 
+}
+
+/*  Facebook button color on hover */
+.btn-facebook:hover, 
+a .btn-facebook:hover {
+    background-color: #2c4370;
+    border-color: #2c4370; 
+}
+
+/*  Google button color */
+.btn-google {
+    background-color: #d64937;
+    border-color: #d64937;
+}
+
+/*  Facebook button color on hover */
+.btn-google:hover, 
+a .btn-google:hover {
+    background-color: #b03d2e;
+    border-color: #b03d2e;
+}
+
+/*  LinkedIn button color */
+.btn-linkedin {
+    background-color: #0073b2;
+    border-color: #0073b2; 
+}
+
+/*  Facebook button color on hover */
+.btn-linkedin:hover, 
+a .btn-linkedin:hover {
+    background-color: #005b8c;
+    border-color: #005b8c; 
+}
