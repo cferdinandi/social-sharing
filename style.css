@@ -1,18 +1,20 @@
-/*
+/* =============================================================
 
-    SOCIAL-SHARING.CSS v1.0
-    Social sharing links and buttons without the bloat.
+    Social Sharing v2.0
+    Social sharing links and buttons without the bloat, by Chris Ferdinandi.
     http://gomakethings.com
 
 
     Licensed under WTFPL.
     http://www.wtfpl.net/
     
+ * ============================================================= */
 
-*/
 
-/*  RESPONSIVE RESET */
-/*  Replace with your own */
+/* =============================================================
+    RESPONSIVE RESET
+    Replace with your own.
+ * ============================================================= */
 
 @-webkit-viewport { width: device-width; zoom: 1.0; }
    @-moz-viewport { width: device-width; zoom: 1.0; }
@@ -36,9 +38,11 @@ img, audio, video, canvas { max-width: 100%; }
 
 
 
-/*  BASE BUTTONS STYLES */
-/*  These are included already with Kraken.
- *  Only needed if you're using another framework. */
+/* =============================================================
+    BASE BUTTON STYLES
+    These are included already with Kraken.
+    Only needed if you're using another framework.
+ * ============================================================= */
 
 .btn {
     display: inline-block;
@@ -71,8 +75,10 @@ a .btn:hover,
 
 
 
-/*  SOCIAL SHARING BUTTONS */
-/*  Styling for social sharing buttons */
+/* =============================================================
+    SOCIAL SHARING BUTTONS
+    Styling for social sharing buttons.
+ * ============================================================= */
 
 /*  Twitter button color */
 .btn-tweet {

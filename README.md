@@ -7,7 +7,7 @@ The widgets provided by Twitter, Facebook, and other services require numerous H
 Getting started with Social Sharing is really easy. [View the online tutorial](http://cferdinandi.github.com/social-sharing/) or dig through the `index.html` file.
 
 ## Changelog
-* 4/2/2013
+* Version 1.0 (April 2, 2013)
   * Initial release.
 
 ## License
