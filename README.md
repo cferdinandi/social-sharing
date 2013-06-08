@@ -7,8 +7,10 @@ The widgets provided by Twitter, Facebook, and other services require numerous H
 Getting started with Social Sharing is really easy. [View the online tutorial](http://cferdinandi.github.com/social-sharing/) or dig through the `index.html` file.
 
 ## Changelog
+* v1.0 (June 7, 2013)
+  * Switched to MIT license.
 * Version 1.0 (April 2, 2013)
   * Initial release.
 
 ## License
-Social Sharing is licensed under [WTFPL](http://www.wtfpl.net/).
+Social Sharing is free to use under the [MIT License](http://gomakethings.com/mit/).
