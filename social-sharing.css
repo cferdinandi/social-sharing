@@ -6,33 +6,33 @@
 
     Free to use under the MIT License.
     http://gomakethings.com/mit/
-    
+
  * ============================================================= */
 
 /*  Twitter button color */
 .btn-tweet {
     background-color: #41b7d8;
-    border-color: #41b7d8; 
+    border-color: #41b7d8;
 }
 
 /*  Twitter button color on hover */
-.btn-tweet:hover, 
+.btn-tweet:hover,
 a .btn-tweet:hover {
     background-color: #3697b2;
-    border-color: #3697b2; 
+    border-color: #3697b2;
 }
 
 /*  Facebook button color */
 .btn-facebook {
     background-color: #3b5997;
-    border-color: #3b5997; 
+    border-color: #3b5997;
 }
 
 /*  Facebook button color on hover */
-.btn-facebook:hover, 
+.btn-facebook:hover,
 a .btn-facebook:hover {
     background-color: #2c4370;
-    border-color: #2c4370; 
+    border-color: #2c4370;
 }
 
 /*  Google button color */
@@ -42,7 +42,7 @@ a .btn-facebook:hover {
 }
 
 /*  Facebook button color on hover */
-.btn-google:hover, 
+.btn-google:hover,
 a .btn-google:hover {
     background-color: #b03d2e;
     border-color: #b03d2e;
@@ -51,12 +51,25 @@ a .btn-google:hover {
 /*  LinkedIn button color */
 .btn-linkedin {
     background-color: #0073b2;
-    border-color: #0073b2; 
+    border-color: #0073b2;
 }
 
-/*  Facebook button color on hover */
-.btn-linkedin:hover, 
+/*  LinkedIn button color on hover */
+.btn-linkedin:hover,
 a .btn-linkedin:hover {
     background-color: #005b8c;
-    border-color: #005b8c; 
+    border-color: #005b8c;
+}
+
+/*  Pinterest button color */
+.btn-pinterest {
+    background-color: #cb2027;
+    border-color: #cb2027;
+}
+
+/*  Pinterest button color on hover */
+.btn-pinterest:hover,
+a .btn-pinterest:hover {
+    background-color: #a61a20;
+    border-color: #a61a20;
 }
