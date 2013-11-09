@@ -1,89 +1,88 @@
 /* =============================================================
 
-    Social Sharing v1.2
-    Social sharing links and buttons without the bloat by Chris Ferdinandi.
-    http://gomakethings.com
+	Social Sharing v1.2
+	Social sharing links and buttons without the bloat by Chris Ferdinandi.
+	http://gomakethings.com
 
-    Free to use under the MIT License.
-    http://gomakethings.com/mit/
+	Free to use under the MIT License.
+	http://gomakethings.com/mit/
 
  * ============================================================= */
 
 /*  Twitter button color */
 .btn-tweet {
-    background-color: #41b7d8;
-    border-color: #41b7d8;
+	background-color: #41b7d8;
+	border-color: #41b7d8;
 }
 
 /*  Twitter button color on hover */
 .btn-tweet:hover,
 a .btn-tweet:hover {
-    background-color: #3697b2;
-    border-color: #3697b2;
+	background-color: #3697b2;
+	border-color: #3697b2;
 }
 
 /*  Facebook button color */
 .btn-facebook {
-    background-color: #3b5997;
-    border-color: #3b5997;
+	background-color: #3b5997;
+	border-color: #3b5997;
 }
 
 /*  Facebook button color on hover */
 .btn-facebook:hover,
 a .btn-facebook:hover {
-    background-color: #2c4370;
-    border-color: #2c4370;
+	background-color: #2c4370;
+	border-color: #2c4370;
 }
 
 /*  Google button color */
 .btn-google {
-    background-color: #d64937;
-    border-color: #d64937;
+	background-color: #d64937;
+	border-color: #d64937;
 }
 
 /*  Facebook button color on hover */
 .btn-google:hover,
 a .btn-google:hover {
-    background-color: #b03d2e;
-    border-color: #b03d2e;
+	background-color: #b03d2e;
+	border-color: #b03d2e;
 }
 
 /*  LinkedIn button color */
 .btn-linkedin {
-    background-color: #0073b2;
-    border-color: #0073b2;
+	background-color: #0073b2;
+	border-color: #0073b2;
 }
 
 /*  LinkedIn button color on hover */
 .btn-linkedin:hover,
 a .btn-linkedin:hover {
-    background-color: #005b8c;
-    border-color: #005b8c;
+	background-color: #005b8c;
+	border-color: #005b8c;
 }
 
 /*  Pinterest button color */
 .btn-pinterest {
-    background-color: #cb2027;
-    border-color: #cb2027;
+	background-color: #cb2027;
+	border-color: #cb2027;
 }
 
 /*  Pinterest button color on hover */
 .btn-pinterest:hover,
 a .btn-pinterest:hover {
-    background-color: #a61a20;
-    border-color: #a61a20;
+	background-color: #a61a20;
+	border-color: #a61a20;
 }
 
 /*  Github button color */
 .btn-github {
-    background-color: #3a3838;
-    border-color: #3a3838;
+	background-color: #3a3838;
+	border-color: #3a3838;
 }
 
 /*  Github button color on hover */
 .btn-github:hover,
 a .btn-github:hover {
-    background-color: #1d1c1c;
-    border-color: #1d1c1c;
+	background-color: #1d1c1c;
+	border-color: #1d1c1c;
 }
-
