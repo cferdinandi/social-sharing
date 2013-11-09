@@ -73,3 +73,17 @@ a .btn-pinterest:hover {
     background-color: #a61a20;
     border-color: #a61a20;
 }
+
+/*  Github button color */
+.btn-github {
+    background-color: #3a3838;
+    border-color: #3a3838;
+}
+
+/*  Github button color on hover */
+.btn-github:hover,
+a .btn-github:hover {
+    background-color: #1d1c1c;
+    border-color: #1d1c1c;
+}
+
