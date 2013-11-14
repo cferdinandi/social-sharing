@@ -94,7 +94,8 @@ a .btn-github:hover {
 }
 
 /* VK button color on hover */
-.btn-vk:hover, a .btn-vk:hover {
+.btn-vk:hover,
+a .btn-vk:hover {
 	background-color: #406185;
 	border-color: #406185;
 }
