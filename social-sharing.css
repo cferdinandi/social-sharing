@@ -73,3 +73,16 @@ a .btn-pinterest:hover {
     background-color: #a61a20;
     border-color: #a61a20;
 }
+
+/*  Xing button color */
+.btn-xing {
+    background-color: #175E60;
+    border-color: #175E60;
+}
+
+/*  Xing button color on hover */
+.btn-xing:hover,
+a .btn-xing:hover {
+    background-color: #105050;
+    border-color: #105050;
+}
