@@ -99,3 +99,16 @@ a .btn-vk:hover {
 	background-color: #406185;
 	border-color: #406185;
 }
+
+/*  Xing button color */
+.btn-xing {
+    background-color: #175e60;
+    border-color: #175e60;
+}
+
+/*  Xing button color on hover */
+.btn-xing:hover,
+a .btn-xing:hover {
+    background-color: #105050;
+    border-color: #105050;
+}
