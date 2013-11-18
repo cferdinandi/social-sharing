@@ -86,3 +86,16 @@ a .btn-github:hover {
 	background-color: #1d1c1c;
 	border-color: #1d1c1c;
 }
+
+/* VK button color */
+.btn-vk {
+	background-color: #5e82a8;
+	border-color: #5e82a8;
+}
+
+/* VK button color on hover */
+.btn-vk:hover,
+a .btn-vk:hover {
+	background-color: #406185;
+	border-color: #406185;
+}
