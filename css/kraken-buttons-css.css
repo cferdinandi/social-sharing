@@ -9,30 +9,30 @@
 	http://gomakethings.com/mit/
 
  * ============================================================= */
-
 .btn {
-	display: inline-block;
-	font-size: .882352941em;
-	padding: .4em .666666667em;
-	line-height: 1.333333333;
-	font-weight: normal;
-	background-color: #808080;
-	border: .071428571em solid #808080;
-	border-radius: .235294118em;
-	margin-left: .3em;
-	margin-bottom: .3em;
+  display: inline-block;
+  font-size: 0.9375em;
+  padding: 0.5em 0.6875em;
+  line-height: 1.2;
+  font-weight: normal;
+  background-color: #0088cc;
+  border: 0.0725em solid #0088cc;
+  border-radius: 0.0725em;
+  margin-right: 0.3125em;
+  margin-bottom: 0.3125em;
 }
 
 .btn,
 .btn:hover,
-a .btn:hover {
-	color: #ffffff;
+a .btn:hover,
+.btn.active {
+  color: white;
 }
 
 .btn:hover,
 a .btn:hover,
 .btn.active {
-	background-color: #595959;
-	border-color: #595959;
-	text-decoration: none;
+  background-color: #005580;
+  border-color: #005580;
+  text-decoration: none;
 }

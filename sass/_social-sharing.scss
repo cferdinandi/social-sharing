@@ -1,0 +1,124 @@
+/* =============================================================
+
+	Social Sharing v1.3
+	Social sharing links and buttons without the bloat by Chris Ferdinandi.
+	http://gomakethings.com
+
+	Free to use under the MIT License.
+	http://gomakethings.com/mit/
+
+ * ============================================================= */
+
+/*  Variables */
+$color-twitter: #41b7d8;
+$color-facebook: #3b5997;
+$color-google: #d64937;
+$color-linkedin: #0073b2;
+$color-pinterest: #cb2027;
+$color-github: #3a3838;
+$color-vk: #5e82a8;
+$color-xing: #175e60;
+
+
+/*  Twitter */
+.btn-tweet {
+	background-color: $color-twitter;
+	border-color: $color-twitter;
+}
+
+.btn-tweet:hover,
+a .btn-tweet:hover {
+	background-color: darken( $color-twitter, 15% );
+	border-color: darken( $color-twitter, 15% );
+}
+
+
+/*  Facebook */
+.btn-facebook {
+	background-color: $color-facebook;
+	border-color: $color-facebook;
+}
+
+.btn-facebook:hover,
+a .btn-facebook:hover {
+	background-color: darken( $color-facebook, 15% );
+	border-color: darken( $color-facebook, 15% );
+}
+
+
+/*  Google */
+.btn-google {
+	background-color: $color-google;
+	border-color: $color-google;
+}
+
+.btn-google:hover,
+a .btn-google:hover {
+	background-color: darken( $color-google, 15% );
+	border-color: darken( $color-google, 15% );
+}
+
+
+/*  LinkedIn */
+.btn-linkedin {
+	background-color: $color-linkedin;
+	border-color: $color-linkedin;
+}
+
+.btn-linkedin:hover,
+a .btn-linkedin:hover {
+	background-color: darken( $color-linkedin, 15% );
+	border-color: darken( $color-linkedin, 15% );
+}
+
+
+/*  Pinterest */
+.btn-pinterest {
+	background-color: $color-pinterest;
+	border-color: $color-pinterest;
+}
+
+.btn-pinterest:hover,
+a .btn-pinterest:hover {
+	background-color: darken( $color-pinterest, 15% );
+	border-color: darken( $color-pinterest, 15% );
+}
+
+
+/*  GitHub */
+.btn-github {
+	background-color: $color-github;
+	border-color: $color-github;
+}
+
+.btn-github:hover,
+a .btn-github:hover {
+	background-color: darken( $color-github, 15% );
+	border-color: darken( $color-github, 15% );
+}
+
+
+/* VK */
+.btn-vk {
+	background-color: $color-vk;
+	border-color: $color-vk;
+}
+
+.btn-vk:hover,
+a .btn-vk:hover {
+	background-color: darken( $color-vk, 15% );
+	border-color: darken( $color-vk, 15% );
+}
+
+
+/*  Xing */
+.btn-xing {
+    background-color: $color-xing;
+    border-color: $color-xing;
+}
+
+.btn-xing:hover,
+a .btn-xing:hover {
+    background-color: darken( $color-xing, 15% );
+    border-color: darken( $color-xing, 15% );
+}
