@@ -18,6 +18,7 @@ $color-pinterest: #cb2027;
 $color-github: #3a3838;
 $color-vk: #5e82a8;
 $color-xing: #175e60;
+$color-tumblr: #35465c;
 
 
 /*  Twitter */
@@ -121,4 +122,17 @@ a .btn-vk:hover {
 a .btn-xing:hover {
     background-color: darken( $color-xing, 15% );
     border-color: darken( $color-xing, 15% );
+}
+
+
+/*  Tumblr */
+.btn-tumblr {
+	background-color: $color-tumblr;
+	border-color: $color-tumblr;
+}
+
+.btn-tumblr:hover,
+a .btn-tumblr:hover {
+	background-color: darken( $color-tumblr, 15% );
+	border-color: darken( $color-tumblr, 15% );
 }
