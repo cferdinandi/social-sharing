@@ -104,3 +104,14 @@ a .btn-xing:hover {
   background-color: #082222;
   border-color: #082222;
 }
+
+/* Tumblr */
+.btn-tumblr {
+  background-color: #35465c;
+  border-color: #35465C;
+}
+.btn-tumblr:hover,
+a .btn-tumblr:hover {
+  background-color: #2c3a4c;
+  border-color: #2c3a4c;
+}
