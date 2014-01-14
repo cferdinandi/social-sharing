@@ -1,6 +1,6 @@
 /* =============================================================
 
-	Social Sharing v1.3
+	Social Sharing v1.4
 	Social sharing links and buttons without the bloat by Chris Ferdinandi.
 	http://gomakethings.com
 
@@ -105,14 +105,14 @@ a .btn-xing:hover {
   border-color: #082222;
 }
 
-/* Tumblr */
+/*  Tumblr */
 .btn-tumblr {
   background-color: #35465c;
-  border-color: #35465C;
+  border-color: #35465c;
 }
 
 .btn-tumblr:hover,
 a .btn-tumblr:hover {
-  background-color: #2c3a4c;
-  border-color: #2c3a4c;
+  background-color: #19212b;
+  border-color: #19212b;
 }
