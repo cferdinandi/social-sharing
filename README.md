@@ -5,8 +5,9 @@ Add social sharing links and buttons without the bloat. [View the demo](http://c
 
 1. [Getting Started](#getting-started)
 2. [Browser Compatibility](#browser-compatibility)
-3. [License](#license)
-4. [Changelog](#changelog)
+3. [How to Contribute](#how-to-contribute)
+4. [License](#license)
+5. [Changelog](#changelog)
 
 
 
@@ -75,6 +76,12 @@ And that's it, you're done. Nice work!
 ## Browser Compatibility
 
 Social Sharing works in all modern browsers, and IE 6 and above.
+
+
+
+## How to Contribute
+
+In lieu of a formal style guide, take care to maintain the existing coding style. Don't forget to update the version number, the changelog (in the `readme.md` file), and when applicable, the documentation.
 
 
 
