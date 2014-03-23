@@ -116,3 +116,14 @@ a .btn-tumblr:hover {
   background-color: #19212b;
   border-color: #19212b;
 }
+
+.btn-rss {
+    background-color: #f8bc2e;
+    border-color: #f8bc2e;
+}
+
+.btn-rss:hover,
+a .btn-rss:hover {
+    background-color: #e9aa16;
+    border-color: #e9aa16;
+}
