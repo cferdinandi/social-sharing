@@ -1,5 +1,7 @@
 # Social Sharing
-Add social sharing links and buttons without the bloat. [View the demo](http://cferdinandi.github.io/social-sharing/).
+Add social sharing links and buttons without the bloat.
+
+[Download Social Sharing](https://github.com/cferdinandi/social-sharing/archive/master.zip) / [View the demo](http://cferdinandi.github.io/social-sharing/)
 
 **In This Documentation**
 
