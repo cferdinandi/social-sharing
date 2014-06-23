@@ -1,4 +1,4 @@
-# Social Sharing
+# Social Sharing [![Build Status](https://travis-ci.org/cferdinandi/social-sharing.svg)](https://travis-ci.org/cferdinandi/social-sharing)
 Add social sharing links and buttons without the bloat.
 
 [Download Social Sharing](https://github.com/cferdinandi/social-sharing/archive/master.zip) / [View the demo](http://cferdinandi.github.io/social-sharing/)
@@ -15,10 +15,12 @@ Add social sharing links and buttons without the bloat.
 
 ## Getting Started
 
+Compiled and production-ready code can be found in the `dist` directory. The `src` directory contains development code.
+
 ### 1. Include Social Sharing on your site.
 
 ```html
-<link rel="stylesheet" href="css/social-sharing-css.css">
+<link rel="stylesheet" href="dist/css/social-sharing.css">
 ```
 
 If you're not using the [Kraken boilerplate](http://cferdinandi.github.io/kraken/), you might also need to include the button styling.
@@ -68,7 +70,7 @@ To include sharing links for Twitter, Facebook, Google+, LinkedIn and more, just
 
 <a target="_blank" href="https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url=YOUR-URL">Share on Xing</a>
 
-<a target="_blank" href="http://www.tumblr.com/share">Share on Tumblr</a>
+<a target="_blank" href="http://www.tumblr.com/share/link?url=YOUR-URL&description=YOUR-DESCRIPTION">Share on Tumblr</a>
 ```
 
 And that's it, you're done. Nice work!
@@ -95,6 +97,12 @@ Social Sharing is licensed under the [MIT License](http://gomakethings.com/mit/)
 
 ## Changelog
 
+* v1.5.0 - June 23, 2014
+	* Converted to gulp.js workflow.
+	* Updated naming conventions.
+	* Added minified versions of files.
+	* Updated to three number versioning system.
+	* Updated Tumblr sharing link.
 * v1.4 - January 13, 2014
 	* Added Tumblr support.
 * v1.3 - December 6, 2013
