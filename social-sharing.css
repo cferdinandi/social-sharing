@@ -112,3 +112,16 @@ a .btn-xing:hover {
     background-color: #105050;
     border-color: #105050;
 }
+
+/*  Reddit button color */
+.btn-reddit {
+    background-color: #ff5700;
+    border-color: #ff5700;
+}
+
+/*  Reddit button color on hover */
+.btn-reddit:hover,
+a .btn-reddit:hover {
+    background-color: #ff4500;
+    border-color: #ff4500;
+}
