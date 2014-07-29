@@ -8,6 +8,7 @@ $color-github: #3a3838;
 $color-vk: #5e82a8;
 $color-xing: #175e60;
 $color-tumblr: #35465c;
+$color-reddit: #ff5700;
 
 
 /*  Twitter */
@@ -124,4 +125,16 @@ a .btn-xing:hover {
 a .btn-tumblr:hover {
 	background-color: darken( $color-tumblr, 15% );
 	border-color: darken( $color-tumblr, 15% );
+}
+
+/*  Reddit */
+.btn-reddit {
+	background-color: $color-reddit;
+	border-color: $color-reddit;
+}
+
+.btn-reddit:hover,
+a .btn-reddit:hover {
+	background-color: darken( $color-reddit, 15% );
+	border-color: darken( $color-reddit, 15% );
 }
