@@ -1,5 +1,5 @@
 /**
- * social-sharing v1.5.0
+ * social-sharing v1.6.0
  * Social sharing links and buttons without the bloat, by Chris Ferdinandi.
  * http://github.com/cferdinandi/social-sharing
  * 
@@ -88,3 +88,12 @@
 .btn-tumblr:hover, a .btn-tumblr:hover {
   background-color: #19212b;
   border-color: #19212b; }
+
+/*  Reddit */
+.btn-reddit {
+  background-color: #ff5700;
+  border-color: #ff5700; }
+
+.btn-reddit:hover, a .btn-reddit:hover {
+  background-color: #b33b00;
+  border-color: #b33b00; }

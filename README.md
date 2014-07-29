@@ -49,6 +49,7 @@ A few simple classes turn `button` and `a` elements into branded social media bu
 <a class="btn btn-vk" href="#">VK</a>
 <a class="btn btn-xing" href="#">Xing</a>
 <a class="btn btn-tumblr" href="#">Tumblr</a>
+<a class="btn btn-reddit" href="#">Reddit</a>
 ```
 
 **Sharing Links**
@@ -71,6 +72,8 @@ To include sharing links for Twitter, Facebook, Google+, LinkedIn and more, just
 <a target="_blank" href="https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url=YOUR-URL">Share on Xing</a>
 
 <a target="_blank" href="http://www.tumblr.com/share/link?url=YOUR-URL&description=YOUR-DESCRIPTION">Share on Tumblr</a>
+
+<a target="_blank" href="http://www.reddit.com/submit?url=YOUR_URL&title=YOUR_TITLE">Share on Reddit</a>
 ```
 
 And that's it, you're done. Nice work!
@@ -97,6 +100,8 @@ Social Sharing is licensed under the [MIT License](http://gomakethings.com/mit/)
 
 ## Changelog
 
+* v1.6.0 - July 29, 2014
+	* Added Reddit support.
 * v1.5.0 - June 23, 2014
 	* Converted to gulp.js workflow.
 	* Updated naming conventions.
