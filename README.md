@@ -100,6 +100,8 @@ Social Sharing is licensed under the [MIT License](http://gomakethings.com/mit/)
 
 ## Changelog
 
+Social Sharing uses [semantic versioning](http://semver.org/).
+
 * v1.6.0 - July 29, 2014
 	* Added Reddit support.
 * v1.5.0 - June 23, 2014
