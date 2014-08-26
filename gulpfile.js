@@ -1,3 +1,4 @@
+// Gulp Packages
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var clean = require('gulp-clean');
@@ -9,13 +10,16 @@ var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-var sass = require('gulp-sass');
+var sass = require('gulp-ruby-sass');
 var prefix = require('gulp-autoprefixer');
 var minify = require('gulp-minify-css');
+var karma = require('gulp-karma');
 var package = require('./package.json');
 
+// Paths to project folders
 var paths = {
 	output : 'dist/',
+	temp: 'src/temp/',
 	scripts : {
 		input : [ 'src/js/*' ],
 		output : 'dist/js/'
@@ -23,10 +27,6 @@ var paths = {
 	styles : {
 		input : 'src/sass/**/*.scss',
 		output : 'dist/css/'
-	},
-	sass : {
-		input : 'src/sass/*',
-		output : 'dist/sass/',
 	},
 	static : 'src/static/**',
 	test : {
@@ -36,6 +36,7 @@ var paths = {
 	}
 };
 
+// Template for banner to add to file headers
 var banner = {
 	full :
 		'/**\n' +
@@ -54,7 +55,8 @@ var banner = {
 		' */\n'
 };
 
-gulp.task('scripts', ['clean'], function() {
+// Concatenate scripts in subfolders
+gulp.task('concatenate', function() {
 	return gulp.src(paths.scripts.input)
 		.pipe(plumber())
 		.pipe(flatten())
@@ -64,26 +66,19 @@ gulp.task('scripts', ['clean'], function() {
 				var name = file.relative + '.js';
 				return gulp.src(file.path + '/*.js')
 					.pipe(concat(name))
-					.pipe(header(banner.full, { package : package }))
-					.pipe(gulp.dest(paths.scripts.output))
-					.pipe(rename({ suffix: '.min' }))
-					.pipe(uglify())
-					.pipe(header(banner.min, { package : package }))
-					.pipe(gulp.dest(paths.scripts.output));
+					.pipe(gulp.dest(paths.temp));
 			}
-		}))
+		}));
+});
 
-		// Don't add headers to classList.js
-		.pipe(tap(function (file,t) {
-			if ( file.relative === 'classList.js' ) {
-				return gulp.src( file.path )
-					.pipe(gulp.dest(paths.scripts.output))
-					.pipe(rename({ suffix: '.min' }))
-					.pipe(uglify())
-					.pipe(gulp.dest(paths.scripts.output));
-			}
-		}))
-
+// Lint and minify scripts
+gulp.task('scripts', ['clean', 'concatenate'], function() {
+	return gulp.src([
+			paths.scripts.input + '/../*.js',
+			paths.temp + '/*.js'
+		])
+		.pipe(plumber())
+		.pipe(flatten())
 		.pipe(header(banner.full, { package : package }))
 		.pipe(gulp.dest(paths.scripts.output))
 		.pipe(rename({ suffix: '.min' }))
@@ -92,10 +87,11 @@ gulp.task('scripts', ['clean'], function() {
 		.pipe(gulp.dest(paths.scripts.output));
 });
 
+// Process, lint, and minify Sass files
 gulp.task('styles', ['clean'], function() {
 	return gulp.src(paths.styles.input)
 		.pipe(plumber())
-		.pipe(sass())
+		.pipe(sass({style: 'expanded', noCache: true}))
 		.pipe(flatten())
 		.pipe(prefix('last 2 version', '> 1%'))
 		.pipe(header(banner.full, { package : package }))
@@ -106,26 +102,14 @@ gulp.task('styles', ['clean'], function() {
 		.pipe(gulp.dest(paths.styles.output));
 });
 
-gulp.task('sass', ['clean'], function() {
-	return gulp.src(paths.sass.input)
-		.pipe(plumber())
-		.pipe(flatten())
-		.pipe(tap(function (file, t) {
-			if ( file.stat.isDirectory() ) {
-				return gulp.src(file.path + '/*.scss')
-					.pipe(header(banner.full, { package : package }))
-					.pipe(gulp.dest(paths.sass.output + '/components'));
-			}
-		}))
-		.pipe(gulp.dest(paths.sass.output));
-});
-
+// Copy static files into output folder
 gulp.task('static', ['clean'], function() {
 	return gulp.src(paths.static)
 		.pipe(plumber())
 		.pipe(gulp.dest(paths.output));
 });
 
+// Lint scripts
 gulp.task('lint', function () {
 	return gulp.src(paths.scripts.input)
 		.pipe(plumber())
@@ -133,21 +117,40 @@ gulp.task('lint', function () {
 		.pipe(jshint.reporter('jshint-stylish'));
 });
 
+// Remove prexisting content from output and test folders
 gulp.task('clean', function () {
 	return gulp.src([
-				paths.output,
-				paths.test.coverage,
-				paths.test.results
+			paths.output,
+			paths.test.coverage,
+			paths.test.results
 		], { read: false })
 		.pipe(plumber())
 		.pipe(clean());
 });
 
+// Remove temporary files
+gulp.task('cleanTemp', ['scripts'], function () {
+	return gulp.src(paths.temp, { read: false })
+		.pipe(plumber())
+		.pipe(clean());
+});
+
+// Run unit tests
+gulp.task('test', function() {
+	return gulp.src([paths.scripts.input + '/../**/*.js'].concat(paths.test.spec))
+		.pipe(plumber())
+		.pipe(karma({ configFile: 'test/karma.conf.js' }))
+		.on('error', function(err) { throw err; });
+});
+
+// Combine tasks into runner
 gulp.task('default', [
 	'lint',
 	'clean',
+	'static',
+	'concatenate',
 	'scripts',
 	'styles',
-	'sass',
-	'static'
+	'cleanTemp',
+	// 'test'
 ]);
