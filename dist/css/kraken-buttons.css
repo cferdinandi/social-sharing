@@ -1,5 +1,5 @@
 /**
- * social-sharing v1.7.0
+ * social-sharing v1.7.1
  * Social sharing links and buttons without the bloat, by Chris Ferdinandi.
  * http://github.com/cferdinandi/social-sharing
  * 
@@ -29,7 +29,7 @@
 .btn:hover,
 a .btn:hover,
 .btn.active {
-  color: white;
+  color: #ffffff;
 }
 
 .btn:hover,

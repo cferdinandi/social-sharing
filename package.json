@@ -1,7 +1,8 @@
 {
 	"name": "social-sharing",
-	"version": "1.7.0",
+	"version": "1.7.1",
 	"description": "Social sharing links and buttons without the bloat",
+	"main": "./dist",
 	"author": {
 		"name": "Chris Ferdinandi",
 		"url": "http://gomakethings.com"
@@ -26,6 +27,13 @@
 		"gulp-rename": "~1.1.0",
 		"gulp-ruby-sass": "~0.7.1",
 		"gulp-uglify": "~0.3.0",
-		"jshint-stylish": "^0.2.0"
+		"jshint-stylish": "^0.2.0",
+		"lazypipe": "0.2.2",
+		"karma": "^0.12.16",
+		"karma-coverage": "^0.2.4",
+		"karma-jasmine": "~0.2.0",
+		"karma-phantomjs-launcher": "^0.1.4",
+		"karma-spec-reporter": "0.0.13",
+		"karma-htmlfile-reporter": "~0.1"
 	}
 }
