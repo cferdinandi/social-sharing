@@ -94,7 +94,7 @@ You can install Social Sharing with your favorite package manager.
 
 ## Working with the Source Files
 
-If you would prefer, you can work with the development code in the `src` directory using the included [Gulp build system](http://gulpjs.com/). This compiles, lints, and minifies code, and runs unit tests.
+If you would prefer, you can work with the development code in the `src` directory using the included [Gulp build system](http://gulpjs.com/). This compiles, lints, and minifies code, and runs unit tests. It's the same build system that's used by [Kraken](http://cferdinandi.github.io/kraken/), so it includes some unnecessary tasks and Sass variables but can be dropped right in to the boilerplate without any configuration.
 
 ### Dependencies
 Make sure these are installed first.
@@ -102,15 +102,15 @@ Make sure these are installed first.
 * [Node.js](http://nodejs.org)
 * [Ruby Sass](http://sass-lang.com/install)
 * [Gulp](http://gulpjs.com) `sudo npm install -g gulp`
-* [PhantomJS](http://phantomjs.org)
 
 ### Quick Start
 
 1. In bash/terminal/command line, `cd` into your project directory.
 2. Run `npm install` to install required files.
-3. When it's done installing, run `gulp` to get going.
-
-Every time you want to run your tasks, run `gulp`.
+3. When it's done installing, run one of the task runners to get going:
+	* `gulp` manually compiles files.
+	* `gulp watch` automatically compiles files when changes are made.
+	* `gulp reload` automatically compiles files and applies changes using [LiveReload](http://livereload.com/).
 
 
 
@@ -136,6 +136,8 @@ Social Sharing is licensed under the [MIT License](http://gomakethings.com/mit/)
 
 Social Sharing uses [semantic versioning](http://semver.org/).
 
+* v1.7.2 - October 19, 2014
+	* Updated `gulpfile.js` tasks and namespacing.
 * v1.7.1 - October 3, 2014
 	* Updated `gulpfile.js`.
 	* Updated readme.

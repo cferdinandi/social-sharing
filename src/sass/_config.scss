@@ -1,6 +1,10 @@
-//
-// CONFIGURATION SETTINGS
+// @section Configuration Settings
 // Adjust colors, font stacks, breakpoints and sizing.
+//
+// Typographic Scale
+// (For math purposes. Actual font sizes in ems.)
+// 1px, 4px, 5px, 8px, 9px, 11px, 12px, 13px, 15px, 16px, 19px, 21px, 24px, 28px, 32px, 48px, 64px, 80px, 96px
+// line height: 1.5em on small screens, 1.5625em on big screens
 //
 
 // Colors
@@ -33,5 +37,30 @@ $bp-xlarge: 80em;
 
 // Sizing
 $font-base: 100%;
+$font-xlarge-screens: 125%;
 $spacing: 1.5625em;
-$container-max: 60em;
+$container-max: 80em;
+$container-width: 88%;
+
+
+// Grid
+$grid-margins: 1.4%;
+$grid-sizes: ( // name: width
+	fourth: 25%,
+	third: 33.33333333333%,
+	half: 50%,
+	two-thirds: 66.666666666667%,
+	three-fourths: 75%,
+	full: 100%
+);
+$grid-breakpoints: ( // breakpoint, prefix, include offsets (boolean)
+	($bp-xsmall, ".row-start-xsmall", false),
+	($bp-small, ".row-start-small", false),
+	($bp-medium, null, true)
+);
+
+
+// Icons
+$icons: ( // name, character, color
+	("logo", "\e600", null),
+);
