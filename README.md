@@ -11,7 +11,6 @@ Add social sharing links and buttons without the bloat.
 4. [Browser Compatibility](#browser-compatibility)
 5. [How to Contribute](#how-to-contribute)
 6. [License](#license)
-7. [Changelog](#changelog)
 
 
 
@@ -129,38 +128,3 @@ In lieu of a formal style guide, take care to maintain the existing coding style
 ## License
 
 Social Sharing is licensed under the [MIT License](http://gomakethings.com/mit/).
-
-
-
-## Changelog
-
-Social Sharing uses [semantic versioning](http://semver.org/).
-
-* v1.7.2 - October 19, 2014
-	* Updated `gulpfile.js` tasks and namespacing.
-* v1.7.1 - October 3, 2014
-	* Updated `gulpfile.js`.
-	* Updated readme.
-	* Updated travis config file.
-* v1.7.0 - August 25, 2014
-	* Switched from Sass Lib to Ruby Sass.
-* v1.6.0 - July 29, 2014
-	* Added Reddit support.
-* v1.5.0 - June 23, 2014
-	* Converted to gulp.js workflow.
-	* Updated naming conventions.
-	* Added minified versions of files.
-	* Updated to three number versioning system.
-	* Updated Tumblr sharing link.
-* v1.4 - January 13, 2014
-	* Added Tumblr support.
-* v1.3 - December 6, 2013
-	* Added Sass support.
-* v1.2 - November 9, 2013
-	* Added GitHub button.
-* v1.1 - October 26, 2013
-	* Added Pinterest support.
-* v1.0 - June 7, 2013
-	* Switched to MIT license.
-* Version 1.0 - April 2, 2013
-	* Initial release.
