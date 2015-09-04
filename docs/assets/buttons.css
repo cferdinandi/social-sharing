@@ -1,0 +1,27 @@
+/* Button styling */
+.btn {
+	display: inline-block;
+	font-size: 0.9375em;
+	padding: 0.5em 0.6875em;
+	line-height: 1.2;
+	font-weight: normal;
+	background-color: #0088cc;
+	border: 1px solid #0088cc;
+	margin-right: 0.3125em;
+	margin-bottom: 0.3125em;
+}
+
+.btn,
+.btn:hover,
+a .btn:hover,
+.btn.active {
+	color: #ffffff;
+}
+
+.btn:hover,
+a .btn:hover,
+.btn.active {
+	background-color: #005580;
+	border-color: #005580;
+	text-decoration: none;
+}
