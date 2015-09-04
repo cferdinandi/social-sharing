@@ -3,15 +3,6 @@ Add social sharing links and buttons without the bloat.
 
 [Download Social Sharing](https://github.com/cferdinandi/social-sharing/archive/master.zip) / [View the demo](http://cferdinandi.github.io/social-sharing/)
 
-**In This Documentation**
-
-1. [Getting Started](#getting-started)
-2. [Installing with Package Managers](#installing-with-package-managers)
-3. [Working with the Source Files](#working-with-the-source-files)
-4. [Browser Compatibility](#browser-compatibility)
-5. [How to Contribute](#how-to-contribute)
-6. [License](#license)
-
 
 
 ## Getting Started
@@ -24,15 +15,7 @@ Compiled and production-ready code can be found in the `dist` directory. The `sr
 <link rel="stylesheet" href="dist/css/social-sharing.css">
 ```
 
-If you're not using the [Kraken boilerplate](http://cferdinandi.github.io/kraken/), you might also need to include the button styling.
-
-```html
-<link rel="stylesheet" href="css/kraken-buttons.css">
-```
-
-Social Sharing is [built with Sass](http://sass-lang.com/) for easy customization. If you don't use Sass, that's ok. The `css` folder contains compiled vanilla CSS.
-
-The `_config.scss` and `_mixins.scss` files are the same ones used in [Kraken](http://cferdinandi.github.io/kraken/), so you can drop the `_social-sharing.css` file right into Kraken without making any updates. Or, adjust the variables to suit your own project.
+If you're not using the [Kraken boilerplate](http://cferdinandi.github.io/kraken/), you might also need to include button styling.
 
 ### 2. Add the markup to your HTML.
 
@@ -41,16 +24,16 @@ The `_config.scss` and `_mixins.scss` files are the same ones used in [Kraken](h
 A few simple classes turn `button` and `a` elements into branded social media buttons.
 
 ```html
-<a class="btn btn-tweet" href="#">Twitter</a>
-<a class="btn btn-facebook" href="#">Facebook</a>
-<a class="btn btn-google" href="#">Google+</a>
-<a class="btn btn-linkedin" href="#">LinkedIn</a>
-<a class="btn btn-pinterest" href="#">Pinterest</a>
-<a class="btn btn-github" href="#">GitHub</a>
-<a class="btn btn-vk" href="#">VK</a>
-<a class="btn btn-xing" href="#">Xing</a>
-<a class="btn btn-tumblr" href="#">Tumblr</a>
-<a class="btn btn-reddit" href="#">Reddit</a>
+<a class="btn-tweet" href="#">Twitter</a>
+<a class="btn-facebook" href="#">Facebook</a>
+<a class="btn-google" href="#">Google+</a>
+<a class="btn-linkedin" href="#">LinkedIn</a>
+<a class="btn-pinterest" href="#">Pinterest</a>
+<a class="btn-github" href="#">GitHub</a>
+<a class="btn-vk" href="#">VK</a>
+<a class="btn-xing" href="#">Xing</a>
+<a class="btn-tumblr" href="#">Tumblr</a>
+<a class="btn-reddit" href="#">Reddit</a>
 ```
 
 **Sharing Links**
@@ -85,9 +68,9 @@ And that's it, you're done. Nice work!
 
 You can install Social Sharing with your favorite package manager.
 
-* **[NPM](https://www.npmjs.org/):** `npm install cferdinandi/social-sharing`
-* **[Bower](http://bower.io/):** `bower install https://github.com/cferdinandi/social-sharing.git`
-* **[Component](http://component.io/):** `component install cferdinandi/social-sharing`
+* **NPM:** `npm install cferdinandi/social-sharing`
+* **Bower:** `bower install https://github.com/cferdinandi/social-sharing.git`
+* **Component:** `component install cferdinandi/social-sharing`
 
 
 

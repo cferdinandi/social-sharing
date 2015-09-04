@@ -7,9 +7,44 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- stylesheets -->
-		<link rel="stylesheet" href="dist/css/kraken-buttons.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="assets/buttons.css">
 		<link rel="stylesheet" href="dist/css/social-sharing.css" type="text/css">
-		<link rel="stylesheet" href="assets/css/custom.css" type="text/css">
+		<style type="text/css">
+			/* Add box sizing to everything
+			 * http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+			*,
+			*:before,
+			*:after {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			/* Responsive images */
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+
+			/*  Sets body width */
+			body {
+				max-width: 40em;
+				width: 88%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.row {
+				margin-left: -1.4%;
+				margin-right: -1.4%;
+			}
+			.grid-third {
+				float: left;
+				width: 33.3333333333%;
+				padding-left: 1.4%;
+				padding-right: 1.4%;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -23,33 +58,31 @@
 			</nav>
 
 			<section>
-	<h2>Social Buttons</h2>
+<h2 id="social-buttons">Social Buttons</h2>
+<p>
+    <button class="btn btn-tweet">Tweet</button>
+    <button class="btn btn-facebook">Share</button>
+    <button class="btn btn-google">Google+</button>
+    <button class="btn btn-linkedin">LinkedIn</button>
+    <button class="btn btn-pinterest">Pinterest</button>
+    <button class="btn btn-github">Github</button>
+    <button class="btn btn-vk">VK</button>
+    <button class="btn btn-xing">Xing</button>
+    <button class="btn btn-tumblr">tumblr.</button>
+    <button class="btn btn-reddit">Reddit</button>
+</p>
 
-	<p>
-		<button class="btn btn-tweet">Tweet</button>
-		<button class="btn btn-facebook">Share</button>
-		<button class="btn btn-google">Google+</button>
-		<button class="btn btn-linkedin">LinkedIn</button>
-		<button class="btn btn-pinterest">Pinterest</button>
-		<button class="btn btn-github">Github</button>
-		<button class="btn btn-vk">VK</button>
-		<button class="btn btn-xing">Xing</button>
-		<button class="btn btn-tumblr">tumblr.</button>
-		<button class="btn btn-reddit">Reddit</button>
-	</p>
 
-
-	<h2>Sharing Links</h2>
-
-	<p><a target="_blank" href="https://twitter.com/intent/tweet?text=YOUR-TITLE&url=YOUR-URL&via=TWITTER-HANDLE">Twitter</a></p>
-	<p><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=YOUR-URL">Facebook</a></p>
-	<p><a target="_blank" href="https://plus.google.com/share?url=YOUR-URL">Google+</a></p>
-	<p><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR-URL&title=YOUR-TITLE&summary=YOUR-SUMMARY&source=YOUR-URL">LinkedIn</a></p>
-	<p><a target="_blank" href="https://pinterest.com/pin/create/button/?url=YOUR-URL&description=YOUR-DESCRIPTION&media=YOUR-IMAGE-SRC">Pinterest</a></p>
-	<p><a target="_blank" href="https://vk.com/share.php?url=YOUR-URL&title=YOUR-TITLE&description=YOUR-DESCRIPTION&image=YOUR-IMAGE-SRC&noparse=true">VK</a></p>
-	<p><a target="_blank" href="https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url=YOUR-URL">Xing</a></p>
-	<p><a target="_blank" href="http://www.tumblr.com/share">tumblr.</a></p>
-	<p><a target="_blank" href="http://www.reddit.com/submit?url=YOUR-URL&title=YOUR-TITLE">Reddit</a></p>
+<h2 id="sharing-links">Sharing Links</h2>
+<p><a target="_blank" href="https://twitter.com/intent/tweet?text=YOUR-TITLE&url=YOUR-URL&via=TWITTER-HANDLE">Twitter</a></p>
+<p><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=YOUR-URL">Facebook</a></p>
+<p><a target="_blank" href="https://plus.google.com/share?url=YOUR-URL">Google+</a></p>
+<p><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR-URL&title=YOUR-TITLE&summary=YOUR-SUMMARY&source=YOUR-URL">LinkedIn</a></p>
+<p><a target="_blank" href="https://pinterest.com/pin/create/button/?url=YOUR-URL&description=YOUR-DESCRIPTION&media=YOUR-IMAGE-SRC">Pinterest</a></p>
+<p><a target="_blank" href="https://vk.com/share.php?url=YOUR-URL&title=YOUR-TITLE&description=YOUR-DESCRIPTION&image=YOUR-IMAGE-SRC&noparse=true">VK</a></p>
+<p><a target="_blank" href="https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url=YOUR-URL">Xing</a></p>
+<p><a target="_blank" href="http://www.tumblr.com/share">tumblr.</a></p>
+<p><a target="_blank" href="http://www.reddit.com/submit?url=YOUR-URL&title=YOUR-TITLE">Reddit</a></p>
 			</section>
 		</main>
 
